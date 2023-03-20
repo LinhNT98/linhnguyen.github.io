@@ -30,7 +30,7 @@
       <link rel="stylesheet" href="../css/custom.css" />
       <!--[if lt IE 9]>
       <script src="../https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="../https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
       <![endif]-->
    </head>
    <body class="dashboard dashboard_1">
@@ -61,12 +61,15 @@
                      <li class="active">
                         <a href="#dashboard" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-dashboard yellow_color"></i> <span>Quản lý đơn hàng</span></a>
                         <ul class="collapse list-unstyled" id="dashboard">
-                           <li>
-                              <a href="dich-vu-dang-su-dung.html">> <span>Đơn hàng đã thanh toán</span></a>
-                           </li>
-                           <li>
-                              <a href="don-hang-da-tao.html">> <span>Đơn hàng chưa thanh toán</span></a>
-                           </li>
+                            <li>
+                                <a href="dich-vu-dang-su-dung.html">> <span>Đã thanh toán</span></a>
+                             </li>
+                             <li>
+                                <a href="don-hang-cho-tich-duyet.html">> <span>Chờ tích duyệt</span></a>
+                             </li>
+                             <li>
+                                <a href="#">> <span>Chưa thanh toán</span></a>
+                             </li>
                         </ul>
                      </li>
                      <li>
@@ -149,11 +152,12 @@
                         <div class="white_shd full margin_bottom_30">
                            <div class="full graph_head">
                               <div class="heading1 margin_0">
-                                 <h2>DỊCH VỤ ĐÃ HÊT HẠN</h2>
+                                 <h2>ĐƠN HÀNG ĐÃ TẠO</h2>
                               </div>
                            </div>
                            <div class="table_section padding_infor_info">
-                              <div class="table-responsive-sm">
+                              <br class="table-responsive-sm">
+                                 <span style="color: red;">*</span><span>chiết khấu được tính tại thời điểm tạo đơn hàng, hệ thống sẽ tự động tính toán lại trước khi thanh toán</span>
                                  <table class="table table-bordered table-hover">
                                     <thead class="thead-dark">
                                        <tr>
@@ -162,13 +166,13 @@
                                              <th>Gói dịch vụ</th>
                                              <th>Loại dịch vụ</th>
                                              <th>Mã đơn hàng</th>
-                                             <th>Tên Khách hàng</th>
-                                             <th>IP/CP</th>
-                                             <th>Info</th>
-                                             <th>Trạng thái</th>
-                                             <th>Ngày bắt đầu</th>
-                                             <th>Ngày kết thúc</th>
-                                             <th>Thao tác</th>
+                                             <th>Username/Email</th>
+                                             <th>Ngày tạo đơn</th>
+                                             <th>Giá trị đơn hàng (tạm tính)</th>
+                                             <th>Phần trăm chiết khấu (tạm tính)</th>
+                                             <th>Giá trị chiết khấu (tạm tính)</th>
+                                             <th>Số tiền cần đóng (tạm tính)</th>
+                                             <th></th>
                                            </tr>
                                        </tr>
                                     </thead>
@@ -178,15 +182,15 @@
                                           <td>Viettel Server Basic 1</td>
                                           <td>vServer</td>
                                           <td>MDH073868476</td>
-                                          <td>Nguyễn Văn A</td>
-                                          <td>127.0.0.1:5000</td>
-                                          <td>(thông tin đơn hàng)</td>
-                                          <td>Đang hoạt động</td>
+                                          <td>user1/ a@gmail.com</td>
                                           <td>01-01-2023</td>
-                                          <td>30-12-2023</td>
+                                          <td>1.000.000</td>
+                                          <td>15%</td>
+                                            <td>150.000</td>
+                                            <td>850.000</td>
                                           <td>
                                              <div class="button_block">
-                                                <a href="quan-ly-tac-dong.html" type="button" class="btn cur-p btn-light">Tác động</a>
+                                                <a href="tao-don-hang.html" class="btn cur-p btn-light">Thanh toán</a>
                                              </div>
                                           </td>
                                        </tr>
@@ -195,15 +199,15 @@
                                           <td>Viettel Server Basic 1</td>
                                           <td>vServer</td>
                                           <td>MDH073868476</td>
-                                          <td>Nguyễn Văn A</td>
-                                          <td>127.0.0.1:5000</td>
-                                          <td>(thông tin đơn hàng)</td>
-                                          <td>Đang hoạt động</td>
+                                          <td>user1/ a@gmail.com</td>
                                           <td>01-01-2023</td>
-                                          <td>30-12-2023</td>
+                                          <td>1.000.000</td>
+                                          <td>15% </td>
+                                            <td>150.000</td>
+                                            <td>850.000</td>
                                           <td>
                                              <div class="button_block">
-                                                <a href="quan-ly-tac-dong.html" type="button" class="btn cur-p btn-light">Tác động</a>
+                                                <a href="tao-don-hang.html" class="btn cur-p btn-light">Thanh toán</a>
                                              </div>
                                           </td>
                                        </tr>
@@ -212,15 +216,15 @@
                                           <td>Viettel Server Basic 1</td>
                                           <td>vServer</td>
                                           <td>MDH073868476</td>
-                                          <td>Nguyễn Văn A</td>
-                                          <td>127.0.0.1:5000</td>
-                                          <td>(thông tin đơn hàng)</td>
-                                          <td>Đang hoạt động</td>
+                                          <td>user1/ a@gmail.com</td>
                                           <td>01-01-2023</td>
-                                          <td>30-12-2023</td>
+                                          <td>1.000.000</td>
+                                          <td>15% </td>
+                                            <td>150.000</td>
+                                            <td>850.000</td>
                                           <td>
                                              <div class="button_block">
-                                                <a href="quan-ly-tac-dong.html" type="button" class="btn cur-p btn-light">Tác động</a>
+                                                <a href="tao-don-hang.html" class="btn cur-p btn-light">Thanh toán</a>
                                              </div>
                                           </td>
                                        </tr>
